@@ -9,7 +9,7 @@ const textArea = document.getElementById('textArea');
 window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 recognition = new SpeechRecognition();
 recognition.interimResults = true;
-recognition.continuous = true;
+recognition.continuous = false;
 recognition.lang = "id";
 
 recognition.addEventListener('result', (e) => {
